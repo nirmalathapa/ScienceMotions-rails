@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { circle, changeState, update } from '../../../packs/statesofmatter.js'
+// import { circle, changeState, update } from '../../../packs/statesofmatter.js'
 export default class StatesOfMatter extends React.Component {
 
 
@@ -9,10 +9,6 @@ export default class StatesOfMatter extends React.Component {
 
     // How to set initial state in ES6 className syntax
     // https://reactjs.org/docs/state-and-lifecycle.html#adding-local-state-to-a-className
-  }
-
-  componentDidMount(){
-    this.Circle();
   }
 
 
@@ -32,9 +28,9 @@ export default class StatesOfMatter extends React.Component {
       <div id="visual">
         <br />
         <div className="buttons" >
-          <button id="solid" onClick={changeState}>SOLID</button>
-          <button id="liquid" onClick={changeState}>LIQUID</button>
-          <button id="gas" onClick={changeState}>GAS</button>
+          <button id="solid" onClick="changeState(500)">SOLID</button>
+          <button id="liquid" onClick="changeState(200)">LIQUID</button>
+          <button id="gas" onClick="changeState(50)">GAS</button>
         </div>
         <canvas id="myCanvas" width="1000" height="1000">
         </canvas>
