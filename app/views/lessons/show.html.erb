@@ -24,8 +24,8 @@
 
 <%= render :partial => 'completed_lessons/form' %>
 
-<%= stylesheet_link_tag 'statesofmatter', media: 'all', 'data-turbolinks-track': 'reload' %>
-<%= javascript_pack_tag 'statesofmatter' %>
+<%= stylesheet_link_tag @lesson.name, media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= javascript_pack_tag @lesson.name %>
 
 
 <%= link_to 'Edit', edit_lesson_path(@lesson) %> |

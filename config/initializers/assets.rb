@@ -22,3 +22,6 @@ Rails.application.config.assets.precompile += %w( periodictable.css )
 
 Rails.application.config.assets.precompile += %w( statesofmatter.css )
 Rails.application.config.assets.precompile += %w( statesofmatter.js )
+
+Rails.application.config.assets.precompile += %w( Dna.css )
+Rails.application.config.assets.precompile += %w( Dna.js )
