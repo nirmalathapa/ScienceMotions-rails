@@ -5,7 +5,7 @@ import Organsystemfinalslow_animated from "images/organsystemfinalslow_animated.
 
 
 const Cells = ({}) => (
-    <section id="top">
+    <section id="animation">
     <div className="cell">
         <div className="organelle-container">
 
