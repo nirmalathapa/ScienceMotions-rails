@@ -29,6 +29,8 @@
 yarn-debug.log*
 .yarn-integrity
 
+public/packs
+
 
 public/packs
 config/database.yml
