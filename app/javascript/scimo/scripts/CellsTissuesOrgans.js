@@ -10,6 +10,7 @@ function makeCell() {
     $newCell.appendTo('.tissue-container');
 }
 
+
 function multiplyCell() {
     for (var i = 0; i < 120; i++) {
         setTimeout(function timer() {
@@ -18,14 +19,18 @@ function multiplyCell() {
     }
 }
 
+
 setTimeout(multiplyCell, 11000);
 
 $(document).ready(function () {
     $('.organ').hide();
     $('.organ-system').hide();
-    var x = document.querySelector(".tissue-container");
-
-    x.addEventListener("animationend", function () {
+    var tissue = document.querySelector(".tissue-container");
+    if (tissue == null) {
+        return
+    }
+    
+    tissue.addEventListener("animationend", function () {
         $('.organ').show();
         $('.organ-system').hide().delay(4000).queue(function (n) {
             $(this).show();
